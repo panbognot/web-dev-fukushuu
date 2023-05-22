@@ -1,0 +1,6 @@
+{
+  "editor.tabSize": 2,
+  "python.formatting.provider": "yapf",
+  "editor.detectIndentation": true,
+  "editor.indentSize": "tabSize"
+}
