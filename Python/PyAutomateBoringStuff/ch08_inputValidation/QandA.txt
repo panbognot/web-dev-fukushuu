@@ -1,0 +1,14 @@
+1. No, it is a 3rd party library. (OK)
+2. Because the name is too long. You assign an alias for code brevity. (OK)
+3.  a. inputInt() validates an integer input (OK)
+    b. inputFloat() validates a float input (OK)
+4. You can use min=0 and lessThan=100 as arguments. 
+      pyip.inputInt(min=0, lessThan=100) (OK)
+5.  a. allowRegexes = Regular expressions that are accepted by the 
+        input (which by default aren't accepted) (OK)
+    b. blockRegexes = Regular expressions that are rejected by the 
+        input validation (OK)
+6. You will get a "RetryLimitException" (OK)
+7. It returns a "hello" response (OK)
+
+7 out of 7!
