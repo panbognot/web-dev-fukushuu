@@ -34,7 +34,7 @@ export class HomeComponent {
       name: 'Acme Fresh Start Housing',
       city: 'Chicago',
       state: 'IL',
-      photo: '/assets/bernard-hermant-CLKGGwIBTaY-unsplash.jpg',
+      photo: '/assets/example-house.jpg',
       availableUnits: 4,
       wifi: true,
       laundry: true
@@ -84,7 +84,7 @@ export class HomeComponent {
       name: 'Hopeful Apartment Group',
       city: 'Oakland',
       state: 'CA',
-      photo: '/assets/r-architecture-JvQ0Q5IkeMM-unsplash.jpg',
+      photo: '/assets/march-2019-uk-hpi.png',
       availableUnits: 2,
       wifi: true,
       laundry: true
@@ -94,7 +94,7 @@ export class HomeComponent {
       name: 'Seriously Safe Towns',
       city: 'Oakland',
       state: 'CA',
-      photo: '/assets/phil-hearing-IYfp2Ixe9nM-unsplash.jpg',
+      photo: '/assets/row-of-colorful-english-houses.png',
       availableUnits: 5,
       wifi: true,
       laundry: true
@@ -104,7 +104,7 @@ export class HomeComponent {
       name: 'Hopeful Housing Solutions',
       city: 'Oakland',
       state: 'CA',
-      photo: '/assets/r-architecture-GGupkreKwxA-unsplash.jpg',
+      photo: '/assets/traditional-british-brick-terraced-houses-greenwich-london.png',
       availableUnits: 2,
       wifi: true,
       laundry: true
@@ -114,7 +114,7 @@ export class HomeComponent {
       name: 'Seriously Safe Towns',
       city: 'Oakland',
       state: 'CA',
-      photo: '/assets/saru-robert-9rP3mxf8qWI-unsplash.jpg',
+      photo: '/assets/Terraced_housing_in_Lea_Road,_Wolverhampton_-_geograph.org.uk_-_1735604.jpg',
       availableUnits: 10,
       wifi: false,
       laundry: false
@@ -124,7 +124,7 @@ export class HomeComponent {
       name: 'Capital Safe Towns',
       city: 'Portland',
       state: 'OR',
-      photo: '/assets/webaliser-_TPTXZd9mOo-unsplash.jpg',
+      photo: '/assets/the-bailiffs-house.jpg',
       availableUnits: 6,
       wifi: true,
       laundry: true
