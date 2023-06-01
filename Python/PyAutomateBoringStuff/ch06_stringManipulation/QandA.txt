@@ -1,0 +1,19 @@
+1. Escape character examples are the following: \n, \t, \\. These are characters
+    that use white spaces or new lines.
+2. \n is new line and \t is a tab.
+3. There many ways to do it:
+    a. \\ (use a double backslash)
+    b. Use a special quotes like """""", prefix with r for rawstring
+4. Because it is using "" to contain the string.
+5. ?
+6.  a. e
+    b. Hello
+    c. Hello
+    d. lo, world!
+7.  a. HELLO 
+    b. True
+    c. hello 
+8.  a. ['Remember,', 'remember,' , 'the', 'fifth', 'of', 'November.']
+    b. There-can-be-only-one.
+9. ljust(), rjust(), center()
+10. lstrip() and rstrip()

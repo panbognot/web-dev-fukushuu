@@ -1,0 +1,51 @@
+OK 1. re.compile()
+X 2. Because Regex often use special characters with special meanings for regex
+    processing. Examples of these are: ()[]{} etc
+    Correct answer: Raw strings are used so that backslashes do not have
+        to be escaped.
+? 3. Returns one or zero matches -> somewhat correct 
+    Correct answer: Returns Match objects
+OK 4. matchObject.group() -> you call the group() or groups() functions
+OK 5.  a. Group 0 covers the whole pattern
+    b. Group 1 covers (\d{3})
+    c. Group 2 covers (\d{3}-\d{4})
+OK 6. You should escape them using a backslash character or \.
+    a. Actual parentheses \( and \)
+    b. Actual period \.
+OK 7.  a. List of strings - If the regex isn't grouped 
+    b. List of tuples of strings - If the regex is grouped 
+OK 8. It is the bitwise OR operator
+OK 9.  i. The regex portion is optional (Match zero or one)
+    ii. Used as a "non-greedy" match or get the shortest match possible
+OK 10. a. + - Means "one or more match" of the pattern 
+    b. * - Means "zero or more match" of the pattern 
+OK 11. a. {3} - represents 3 repetitions of the preceding pattern 
+    b. {3,5} - represents 3 to 5 repetitions of the preceding pattern 
+(2/3) 12. a. \d - Any digit (OK)
+    b. \w - Any letter, word or special character X -> letter, digit, underscore
+    c. \s - Any space character (OK) 
+(2/3) 13. a. \D - Any NON digit (OK)
+    b. \W - Any NON letter, word or special character X -> NON letter, digit, underscore 
+    c. \S - Any NON space character (OK)
+X 14. a. .* - Any number of wild characters
+    b. .*? - Any number of wild characters is optional 
+    correct answers:
+    a. Performs a greedy match 
+    b. Performs a non-greedy match
+OK 15. [0-9a-z]
+OK 16. Add a 2nd argument, re.IGNORECASE, to the re.compile() funtion.
+OK 17. a. . - Usually matches a single wild character excluding space chars
+    b. Adding re.DOTALL to the 2nd argument, it will return any wild 
+        character including space characters as well.
+OK 18. X drummers, X pipers, five rings, X hens
+OK 19. Passing re.VERBOSE as a 2nd argument will allow your Regex pattern 
+      to become more readable. You can use new lines and add comments
+      per line so that it is easier to understand when you get back to it.
+X 20. ^\d{1,3}(,\d{3})*$ -> I already looked up for this answer 
+(1/2) 21. ^[A-Z]\w* Watanabe$ -> Passed the test cases at least 
+    correct answer:
+      re.compile(r'[A-Z][a-z]*\sWatanabe')
+OK 22. re.compile(r'(alice|bob|carol)\s(eats|pets|throws)\s(apples|cats|baseballs)\.', re.IGNORECASE)
+
+Score: 17.5 out of 22
+Not bad if I might say so :D
