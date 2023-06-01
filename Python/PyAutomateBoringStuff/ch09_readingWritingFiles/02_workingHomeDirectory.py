@@ -9,7 +9,7 @@ os.makedirs('./testA')
 Path(r'./testB').mkdir()
 
 # Change the current working directory
-os.chdir('C:/Users/Admin/Documents')
+os.chdir('C:/Users')
 print(Path.cwd())
 
 # Get the home directory
