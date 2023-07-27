@@ -8,13 +8,23 @@
 import shelve, pyperclip, sys
 from pathlib import Path
 
-# p = Path.cwd() / 'ch09_readingWritingFiles/chapterProject_02'
 p = Path.cwd()
 mcbShelf = shelve.open(p / 'mcb')
 
 # Save clipboard content.
 if len(sys.argv) == 3 and sys.argv[1].lower() == 'save':
   mcbShelf[sys.argv[2]] = pyperclip.paste()
+
+# Delete clipboard content.
+elif len(sys.argv) == 3 and sys.argv[1].lower() == 'delete':
+  if sys.argv[2].lower() == 'all':
+    # Delete all stored information in the shelf file
+    for key in mcbShelf:
+      del mcbShelf[key]
+  else:
+    # Check if the keyword exists
+    if sys.argv[2].lower() in mcbShelf:
+      del mcbShelf[sys.argv[2]]
 
 elif len(sys.argv) == 2:
   # List keywords and load content.

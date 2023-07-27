@@ -1,0 +1,21 @@
+Practice Questions: (12 out of 15)
+
+1. To the current working directory. (ok)
+2. The root folder or drive. (ok)
+3. 'C:/Users/Al' (a bit inaccurate)
+  -> Ans: WindowsPath('C:/Users/Al)
+4. Nothing. This will cause an error. (ok)
+5. a. os.getcwd() - displays the path of the current working directory (ok) 
+   b. os.chdir() - moves the CWD to the path you want to access (ok)
+6. a. '.' - is the current folder (ok)
+   b. '..' - is the parent folder (ok)
+7. a. Directory name - 'C:\bacon\eggs' (ok)
+   b. Base name - 'spam.txt' (ok)
+8. read (r), write (w), append (a) (ok)
+9. The existing file will be overwritten upon save. (ok)
+10. [No answer]
+   a. read() - returns the file's entire contents as a single string value.
+   b. readlines() - returns a list of strings, where each string is a line from the file's contents
+11. Dictionary (ok)
+  -> it has keys and values, along with keys() and values() methods that work similarly
+    to the dictionary methods of the same names
