@@ -1,0 +1,12 @@
+1. 
+  a. shutil.copy() - copies a single file ONLY (ok)
+  b. shutil.copytree() - copies all the files and folders in the path (ok) 
+2. shutil.move() [ok]
+3.
+  a. send2trash - is safer because it is sent to the recycle bin [ok]
+  b. shutil delete - deletes files and folders permanently [ok]
+4. ZipFile() method [ok]
+
+score: 6 out of 6!
+
+NOTE: I skipped the "programming quiz" because it was super boring 
