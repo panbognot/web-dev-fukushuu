@@ -3,6 +3,13 @@
 # to European DD-MM-YYYY.
 
 import shutil, os, re 
+from pathlib import Path
+
+projPath = Path.cwd() / 'ch10_organizingFiles/project01_renameUSToEuroDates'
+
+# print(os.getcwd())
+# os.chdir('./ch10_organizingFiles/project01_renameUSToEuroDates')
+# print(os.getcwd())
 
 # Create a regex that matches file with the American date format.
 datePattern = re.compile(r"""^(.*?) # all text before the date
@@ -13,8 +20,10 @@ datePattern = re.compile(r"""^(.*?) # all text before the date
   """, re.VERBOSE)
 
 # Loop over the files in the working directory.
-for amerFilename in os.listdir('.'):
-  mo = datePattern.search(amerFilename)
+# for amerFilename in os.listdir('.'):
+for amerFilename in projPath.iterdir():
+  # mo = datePattern.search(amerFilename)
+  mo = datePattern.search(str(amerFilename))
 
   # Skip files without a date.  
   if mo == None:
@@ -39,9 +48,9 @@ for amerFilename in os.listdir('.'):
   euroFilename = beforePart + dayPart + '-' + monthPart + '-' + yearPart + afterPart
 
   # Get the full, absolutte file pathss.
-  absWorkingDir = os.path.abspath('.')
-  amerFilename = os.path.join(absWorkingDir, amerFilename)
-  euroFilename = os.path.join(absWorkingDir, euroFilename)
+  # absWorkingDir = os.path.abspath('.')
+  # amerFilename = os.path.join(absWorkingDir, amerFilename)
+  # euroFilename = os.path.join(absWorkingDir, euroFilename)
 
   # Rename the files.
   print(f'Renaming "{amerFilename}" to "{euroFilename}"...')
