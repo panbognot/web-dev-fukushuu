@@ -12,14 +12,37 @@ datePattern = re.compile(r"""^(.*?) # all text before the date
   (.*?)$                            # all text after the date
   """, re.VERBOSE)
 
-# TODO: Loop over the files in the working directory.
+# Loop over the files in the working directory.
+for amerFilename in os.listdir('.'):
+  mo = datePattern.search(amerFilename)
 
-# TODO: Skip files without a date.
+  # Skip files without a date.  
+  if mo == None:
+    continue
 
-# TODO: Get the different parts of the filename.
+  # Get the different parts of the filename.
+  beforePart  = mo.group(1)
+  monthPart   = mo.group(2)
+  dayPart     = mo.group(4)
+  yearPart    = mo.group(6)
+  afterPart   = mo.group(8)
+  
+  # The group numbers are based on the number of open parenthesis.
+  # datePattern = re.compile(r"""^(1) # all text before the date
+  #   (2 (3) )-                     # one or two digits for the month
+  #   (4 (5) )-                     # one or two digits for the day
+  #   (6 (7) )                      # four digits for the year
+  #   (8)$                          # all text after the date
+  #   """, re.VERBOSE)
 
-# TODO: Form the European-style filename.
+  # Form the European-style filename.
+  euroFilename = beforePart + dayPart + '-' + monthPart + '-' + yearPart + afterPart
 
-# TODO: Get the full, absolutte file pathss.
+  # Get the full, absolutte file pathss.
+  absWorkingDir = os.path.abspath('.')
+  amerFilename = os.path.join(absWorkingDir, amerFilename)
+  euroFilename = os.path.join(absWorkingDir, euroFilename)
 
-# TODO: Rename the files.
+  # Rename the files.
+  print(f'Renaming "{amerFilename}" to "{euroFilename}"...')
+  # shutil.move(amerFilename, euroFilename) # uncomment after testing
