@@ -1,0 +1,31 @@
+Chapter 11 - Debugging 
+
+1. assert spam < 10 [X]
+  correct answer: assert spam >= 10
+2. assert eggs.lower() == bacon.lower() [X]
+  correct answer: eggs.lower() != bacon.lower()
+3. assert False [OK]
+4. 
+  a. import logging [OK]
+  b. logging.basicConfig(level=logging.DEBUG) [OK]
+5. 
+  a. import logging [OK]
+  b. logging.basicConfig(filename='programLog.txt', level=logging.DEBUG) [OK]
+6. debug, info, warning, error, critical [OK]
+7. logging.disable(logging.CRITICAL) [OK]
+8. Because it is easier to turn off the display of logging messages [OK]
+9. 
+  a. Step Over - Doesn't go inside a function call before pausing [OK]
+  b. Step In - Goes inside a function call before pausing [OK]
+  c. Step Out - Pauses AFTER a function call [X]
+    correct answer: will quickly execute the rest of the code until it
+      steps out of the function it currently is in. 
+10. It will stop when there is a breakpoint or 
+    the program finishes running [OK]
+11. Manually set point by the developer [0.5]
+    correct answer: A breakpoint is a setting on a line of code that 
+      causes the debugger to pause when the program execution reaches 
+      the line.
+12. Double click or click the line number [OK]
+
+12.5 out of 16
