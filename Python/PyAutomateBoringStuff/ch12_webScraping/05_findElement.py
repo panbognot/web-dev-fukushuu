@@ -26,9 +26,3 @@ print(str(pElems[1]))
 print(pElems[1].getText())
 print(str(pElems[2]))
 print(pElems[2].getText())
-
-
-
-
-
-
