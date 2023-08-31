@@ -11,4 +11,7 @@ sleep(3)
 htmlElem.send_keys(Keys.END)    # scrolls to bottom
 sleep(3)
 htmlElem.send_keys(Keys.HOME)   # scrolls to top
+sleep(3)
+browser.refresh()               # refresh the website
 sleep(5)
+browser.quit()                  # close the browser window
