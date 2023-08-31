@@ -1,0 +1,55 @@
+Quiz #12!
+
+1. 
+  a. (0.5) webbrowser - opens a web browser
+    answer: The webbrowser module has an open() method that will launch a web 
+      browser to a specific URL, and that's it.
+  b. (X) requests - HTTP library for sending HTTP requests like GET and POST
+    answer: The requests module can download files and pages from the web.
+  c. (0.5) bs4 - beautiful soup for scraping or navigating a web page
+    answer: The BeautifulSoup module parses HTML.
+  d. (1) selenium - simulating a user opening a browser and navigating through it
+    answer: The Selenium module can launch and control a browser
+2. 
+  a. (1) It returns a HTTP response object
+  b. (X) response.iter_content()
+    answer: The response has a text attribute that contains the downloaded content
+      as a string.
+3. (0.5) Use response.raise_for_status()
+  answer: The raise_for_status() method raises an exception if the download had
+    problems and does nothing if the download succeeded. 
+4. (X) Use response.raise_for_status() as well
+  answer: The status_code attribute of the Response object contains the HTTP 
+    status code.
+5. (1) Open a file in 'wb' (write binary) mode and use a for loop to write it there. 
+  file = open('text.txt', 'wb')
+  for chunk in res.iter_content(100000):
+    file.write(chunk)
+  file.close()
+6. (1) Press F12
+7. (1) Right click on a specific element and click "inspect"
+8. (1) '#main'
+9. (1) '.highlight'
+10. (X) 'div > div'
+  answer: 'div div'
+11. (X) 'button', {'attr': 'favorite'}
+  answer: 'button[value="favorite"]'
+12. (1) Tag.text
+  note: this is the updated answer 
+13. (1) linkElem = Tag.get('attr')
+  note: this is the updated answer 
+14. (1) from selenium import webdriver
+15. 
+  a. (1) find_element - finds the first element that match
+  b. (1) find_elements - finds ALL elements that match 
+  note: updated answers as well 
+16. 
+  a. (1) mouse clicks - WebElement.click()
+  b. (1) keyboard keys - WebElement.send_keys('text or key here') 
+17. (1) WebElement.submit()
+18. 
+  a. (1) Forward - browser.forward()
+  b. (1) Back - browser.back()
+  c. (1) Refresh - browser.refresh()
+
+(Score: 19.5 out of 26 points)
